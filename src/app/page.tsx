@@ -4,8 +4,15 @@ import FeaturesSection from "@/components/features_section/page";
 import CtaSection from "@/components/cta_section/page";
 import HeroSection from "@/components/hero_section/page";
 import ReviewsSection from "@/components/reviews_section/page";
+import { useEffect } from "react";
+import { useSession } from "next-auth/react";
 
 export default function Home() {
+  const { data: session } = useSession();
+  useEffect(() => {
+    console.log("Session data:", session);
+  }, [session]);
+
   return (
     <div className="min-h-screen overflow-hidden bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-blue-800 via-indigo-900 to-slate-950 mt-18">
 
