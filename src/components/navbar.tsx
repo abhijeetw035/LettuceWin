@@ -250,7 +250,7 @@ export function Navbar() {
                     <Link href="/login" onClick={() => setMobileMenuOpen(false)}>Log in</Link>
                   </Button>
                   <Button asChild className="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white border-none">
-                    <Link href="/signup" onClick={() => setMobileMenuOpen(false)}>Sign up</Link>
+                    <Link href="/register" onClick={() => setMobileMenuOpen(false)}>Sign up</Link>
                   </Button>
                 </div>
               </div>
